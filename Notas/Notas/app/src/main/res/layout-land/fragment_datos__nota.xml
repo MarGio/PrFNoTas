@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gio.notas.Datos_Nota">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txttitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Titulo"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:ems="10"
+            android:hint="@string/Descripcion"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtnAudioNota"
+                android:layout_width="265dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@color/primary"
+                android:src="@android:drawable/presence_audio_away" />
+
+            <ImageButton
+                android:id="@+id/imageBtnimagenNota"
+                android:layout_width="212dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@color/primary"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/imageBtnVideoNota"
+                android:layout_width="188dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@color/primary"
+                android:src="@android:drawable/presence_video_online" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnguardarNota"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:text="@string/Agregar"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnactualizar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionModeSplitBackground"
+            android:text="@string/Actualizar"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gio.notas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <Button
+            android:id="@+id/btnNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/accent"
+            android:backgroundTint="@color/primary"
+            android:text="@string/VerN" />
+
+        <TextView
+            android:id="@+id/txtTareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="@string/Tareas" />
+
+        <EditText
+            android:id="@+id/txtbuscarRecordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/BuscarT"
+            android:inputType="textFilter"
+            android:textColor="@color/primary"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/listaContactos"
+            style="@style/Widget.AppCompat.Light.ListView.DropDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/textColorHighlight"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.9dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="horizontal|vertical" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
